@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Greenhill School | Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "surface-cream": "#FAF9F6",
+                        "on-surface": "#1a1c1c",
+                        "academic-gold": "#D4AF37",
+                        "primary-container": "#12472e",
+                        "heritage-green": "#12472E",
+                        "text-muted": "#4A4A4A",
+                        "on-primary-fixed": "#002111",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-surface": "#2f3131",
+                        "surface": "#f9f9f9",
+                        "tertiary": "#002f1a",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-container": "#745c00",
+                        "surface-dim": "#dadada",
+                        "primary": "#002f1b",
+                        "outline": "#717972",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-container": "#00482a",
+                        "secondary": "#735c00",
+                        "secondary-container": "#fed65b",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#9dd3b1",
+                        "on-tertiary-fixed-variant": "#0f5132",
+                        "on-surface-variant": "#414943",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#78b690",
+                        "tertiary-fixed": "#b0f1c7",
+                        "surface-tint": "#36684d",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-fixed-variant": "#1d5036",
+                        "inverse-primary": "#9dd3b1",
+                        "on-primary-container": "#80b595",
+                        "on-secondary": "#ffffff",
+                        "text-main": "#1A1A1A",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c0c9c0",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#b8efcc",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-bright": "#f9f9f9",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container": "#eeeeee",
+                        "secondary-fixed-dim": "#e9c349",
+                        "tertiary-fixed-dim": "#95d4ac",
+                        "on-tertiary-fixed": "#002111",
+                        "on-background": "#1a1c1c"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "organic": "60% 40% 30% 70% / 60% 30% 70% 40%"
+                    },
+                    spacing: {
+                        "section-gap-mobile": "80px",
+                        "margin-mobile": "24px",
+                        "container-max": "1440px",
+                        "section-gap-desktop": "160px",
+                        "margin-desktop": "80px",
+                        "gutter": "32px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["DM Sans", "sans-serif"],
+                        "label-lg": ["DM Sans", "sans-serif"],
+                        "display-lg-mobile": ["DM Sans", "sans-serif"],
+                        "display-lg": ["DM Sans", "sans-serif"],
+                        "label-md": ["DM Sans", "sans-serif"],
+                        "body-lg": ["Source Serif 4", "serif"],
+                        "headline-lg": ["DM Sans", "sans-serif"],
+                        "body-md": ["Source Serif 4", "serif"]
+                    },
+                    fontSize: {
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+                        "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "display-lg-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "display-lg": ["72px", { lineHeight: "80px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+                        "body-lg": ["20px", { lineHeight: "32px", fontWeight: "400" }],
+                        "headline-lg": ["48px", { lineHeight: "56px", fontWeight: "700" }],
+                        "body-md": ["18px", { lineHeight: "28px", fontWeight: "400" }]
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+                        'float': '0 30px 60px -20px rgba(0,0,0,0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .clip-organic { clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%); }
+        .clip-circle { clip-path: circle(50% at 50% 50%); }
+        .text-balance { text-wrap: balance; }
+        
+        /* Sticky Nav Transition */
+        .scrolled-nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .scrolled-nav .nav-link { color: #12472E; }
+        .scrolled-nav .brand-logo { color: #12472E; }
+    </style>
+</head>
+<body class="bg-surface-cream text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-academic-gold selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-sm transition-all duration-300 py-6" id="navbar">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="brand-logo font-headline-md text-headline-md font-bold text-white transition-colors duration-300" href="#">Greenhill School</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="nav-link font-label-lg text-label-lg uppercase tracking-widest text-academic-gold font-bold border-b-2 border-academic-gold pb-1 transition-colors duration-300" href="#">Home</a>
+<a class="nav-link font-label-lg text-label-lg uppercase tracking-widest text-white hover:text-academic-gold transition-colors duration-200" href="#">About</a>
+<a class="nav-link font-label-lg text-label-lg uppercase tracking-widest text-white hover:text-academic-gold transition-colors duration-200" href="#">Academics</a>
+<a class="nav-link font-label-lg text-label-lg uppercase tracking-widest text-white hover:text-academic-gold transition-colors duration-200" href="#">Facilities</a>
+<a class="nav-link font-label-lg text-label-lg uppercase tracking-widest text-white hover:text-academic-gold transition-colors duration-200" href="#">Gallery</a>
+<a class="nav-link font-label-lg text-label-lg uppercase tracking-widest text-white hover:text-academic-gold transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-academic-gold text-white font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-opacity-90 transition-all scale-95 active:scale-90 shadow-soft">
+                Admission Open
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-white brand-logo p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-32 pb-section-gap-mobile md:pb-section-gap-desktop overflow-hidden bg-heritage-green">
+<div class="absolute inset-0 z-0 opacity-40">
+<div class="w-full h-full bg-cover bg-center" data-alt="A sweeping, cinematic aerial view of a lush, modern school campus at sunrise. The soft, golden hour light bathes the sprawling green fields and contemporary academic buildings, creating a warm, inspiring atmosphere. High-end architectural photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4TR82B66Uh1xvbZlh6MG5HL9ZiRpQTtat3Db8DXFhd7iUrczx_NTJayY1cSxuZceAy21TM3bZ2sahtXfTsKJ5lODejXp8UOol4rwGyl5S2yveB7PVoL6oiM1PdxcPj5YRrb6xBm4tQCWijnfZvb-I6XDGCTZR2_AeJxFaL_3HHr0JOynGPfmJYQWDcyjW3CUbRM4V1oKbWdvFPGMpCTh-LKn05nqkUTdy7Q9N9YWBNbA9MQXRCpAO3Geu0aFUj3-ojAJbDBsscDLp')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-heritage-green via-heritage-green/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 space-y-8 text-white">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-balance leading-tight">
+                    Inspiring Minds, <br/><span class="text-academic-gold italic font-body-lg text-[1.2em]">Shaping Futures.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-xl">
+                    Discover a progressive learning environment where tradition meets innovation. Greenhill School cultivates excellence, character, and a lifelong passion for discovery.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 bg-academic-gold text-white font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-white hover:text-heritage-green transition-all duration-300 shadow-soft">
+                        Apply Now
+                    </button>
+<button class="px-8 py-4 bg-transparent border border-white text-white font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-white/10 transition-all duration-300">
+                        Explore Campus
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-6 relative hidden lg:block h-[700px]">
+<div class="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full overflow-hidden border-8 border-white/10 shadow-float">
+<img class="w-full h-full object-cover" data-alt="A candid, high-quality photo of diverse students collaborating enthusiastically around a modern circular table. Bright natural light illuminates the modern classroom setting. The students are engaged, smiling, and pointing at a project, capturing a moment of active learning and joy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTZOWSO3wsBHqyAS_u3c5cbm1WfUGz_8WejAXKJgD1Ngho77w6i5Msue3hTgvlRebYwd8J6kXfh8ML4F9lGVJ7dtXzu8L6v5QNfK9nKhVcqHyREufYsbaQefsJ--nGIxWac6m84461NzCF7UQpW6-kPWXdHFkciHTiIqezwSqR5-W0-GC30HMkj9YfaoG9G9K_X9msr31aAKD_2mLCqpN2726s0fVpSjM86OeHqPzRjof1P5xNbnxPh9ccMxWe2wo2pNcPVEg2IQEy"/>
+</div>
+<!-- Decorative Orbit -->
+<div class="absolute right-[-15%] top-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full border border-academic-gold/30 animate-[spin_60s_linear_infinite] pointer-events-none"></div>
+</div>
+</div>
+<!-- Organic Bottom Wave -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+<svg class="relative block w-[calc(100%+1.3px)] h-[100px] md:h-[150px]" data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-surface-cream" d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.28,198.81,108.68Z"></path>
+</svg>
+</div>
+</section>
+<!-- About School - Split Screen -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-cream relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="w-full aspect-[4/5] rounded-[40px] overflow-hidden shadow-float relative z-10">
+<img alt="About Greenhill" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuW-aXxxClFqMhoCULyhyWs0CD0IQuh9D9kh1Dhb2mtzGDWLW7NYSbuV9rYyS-2GDhob52C_FLSrBcmFrj5fkdi6ZDMO5szJIS1wRwIRU6maRL9zt5JWCe6lIy8nQZZ3Z1sKnwFKR3EHC-FLcWrDS8804DKWJiiaciw7B2xqFgpXMuy4XKCGfSePMKeJyjxy4ZeBYhWYBuDwnlI8BTc_cZTnq_iyJL-lNhPlxNEiL_pe-B-IHFlqDWZMFwz"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-64 h-64 bg-academic-gold rounded-full z-0 opacity-20 blur-3xl"></div>
+<!-- Floating Stat Card -->
+<div class="absolute bottom-12 -right-12 bg-white p-6 rounded-2xl shadow-soft z-20 hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-low rounded-full flex items-center justify-center text-heritage-green">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-heritage-green">1950</p>
+<p class="font-label-lg text-label-lg text-text-muted uppercase">Year Founded</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8 order-1 lg:order-2">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-academic-gold"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-heritage-green">Our Story</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-heritage-green text-balance">
+                    A Legacy of <br/><span class="italic font-body-lg text-[1.1em] text-academic-gold">Academic Excellence</span>
+</h2>
+<p class="font-body-md text-body-md text-text-muted">
+                    At Greenhill, we believe education is not merely about accumulating knowledge, but about developing the capacity to think critically, act compassionately, and engage authentically with the world. Our curriculum is designed to challenge students while nurturing their individual talents.
+                </p>
+<p class="font-body-md text-body-md text-text-muted">
+                    With a student-to-teacher ratio that ensures personalized attention, our faculty mentors guide each child on their unique educational journey, fostering a community of lifelong learners.
+                </p>
+<div class="pt-6">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg uppercase tracking-widest text-heritage-green hover:text-academic-gold transition-colors group" href="#">
+                        Discover Our History
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Bento Grid Style -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-heritage-green">The Greenhill Advantage</h2>
+<p class="font-body-md text-body-md text-text-muted">An ecosystem designed to cultivate holistic growth, intellectual curiosity, and robust character.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-cream p-8 rounded-3xl shadow-sm hover:-translate-y-2 transition-all duration-300 group border border-outline-variant/20">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-heritage-green group-hover:text-academic-gold group-hover:bg-heritage-green transition-colors duration-300 mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-3 text-heritage-green">Innovative Curriculum</h3>
+<p class="font-body-md text-body-md text-text-muted">Forward-thinking academic programs that blend traditional rigor with modern experiential learning.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-heritage-green p-8 rounded-3xl shadow-sm hover:-translate-y-2 transition-all duration-300 group">
+<div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-academic-gold mb-6 backdrop-blur-md">
+<span class="material-symbols-outlined text-3xl">diversity_3</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-3 text-white">Inclusive Community</h3>
+<p class="font-body-md text-body-md text-white/80">A diverse and welcoming campus where every student feels valued, heard, and supported.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-cream p-8 rounded-3xl shadow-sm hover:-translate-y-2 transition-all duration-300 group border border-outline-variant/20">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-heritage-green group-hover:text-academic-gold group-hover:bg-heritage-green transition-colors duration-300 mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl">stadium</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-3 text-heritage-green">World-Class Facilities</h3>
+<p class="font-body-md text-body-md text-text-muted">State-of-the-art laboratories, expansive athletic fields, and dedicated arts centers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Principal Message - Elevated Card -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low relative overflow-hidden">
+<div class="absolute right-0 top-0 w-1/2 h-full bg-heritage-green rounded-l-full opacity-5 pointer-events-none hidden lg:block"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-white rounded-[40px] shadow-float p-8 md:p-16 flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/3 flex-shrink-0">
+<div class="relative w-64 h-64 mx-auto lg:w-80 lg:h-80">
+<div class="absolute inset-0 rounded-full border-4 border-academic-gold/30 translate-x-4 translate-y-4"></div>
+<img alt="Principal" class="w-full h-full object-cover rounded-full relative z-10 shadow-soft grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLuicwx9CxOlmEJnT3UU9hkbtPOXax7rT0xZbOWEyl0qlGzuEd1-EqSp9nboo6skUTKPxe5dDj4K2geBi3aiEps07M17Lm6d73wmQCfFikFLkvzNhsZ7Xo4WSamuUc41Y1RhqcEuyKbZ-7M0L9-Bz6bqIpkO5bggqGUaXuVpcEl9AfrQk3Z2IJ8rcvXhT8e2eCpi9UwxYszLv9Z6WGODot6lSUtzcSHXT75AN82uh2JiukJqHK-zCbx0JYk"/>
+</div>
+</div>
+<div class="lg:w-2/3 space-y-6 text-center lg:text-left">
+<span class="material-symbols-outlined text-5xl text-academic-gold/40 block">format_quote</span>
+<p class="font-body-lg text-body-lg md:text-2xl italic text-heritage-green leading-relaxed text-balance">
+                        "Education is the most powerful catalyst for change. At Greenhill, we are not just preparing students for college; we are preparing them for life. We nurture resilience, spark curiosity, and build the ethical foundation needed to lead in a complex world."
+                    </p>
+<div>
+<h4 class="font-headline-md text-xl text-heritage-green">Dr. Sarah Jenkins</h4>
+<p class="font-label-lg text-label-lg text-text-muted uppercase mt-1">Head of School</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Life & Activities - Masonry / Asymmetric -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-cream">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-heritage-green">Vibrant Campus Life</h2>
+<p class="font-body-md text-body-md text-text-muted">Beyond the classroom, our students engage in a rich tapestry of arts, athletics, and extracurricular pursuits.</p>
+</div>
+<button class="flex-shrink-0 px-6 py-3 border border-heritage-green text-heritage-green font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-heritage-green hover:text-white transition-colors duration-300">
+                    View All Activities
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Large Image - Fine Arts -->
+<div class="md:col-span-8 relative rounded-[32px] overflow-hidden group">
+<img alt="Fine Arts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuCs8-_TEsNlXOGsxAEXSFb2VaKsreqBxRWJouTUK7viFIPHuJXITzdG0SEUsDVIS3mwL4srmRP0THPN_hscGu07qS73yj8qnN41hU6Tz66rYCL8WLLJ961-_IPa4z6UZ6pIkxow1ewduRR99OgpzYMcTaHGhoDIteisCHB_gizkkOGnSFGyiXrlse9w_qU0CjTdN5_5iZ5aAlVx99v-CtjDSus0rf8FSl7RXTrBynbAGYfckDK4Cf3AZ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<span class="px-3 py-1 bg-academic-gold text-xs font-label-lg uppercase tracking-wider rounded-full mb-3 inline-block">Arts</span>
+<h3 class="font-headline-md text-2xl">Creative Expression</h3>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-6">
+<!-- Medium Image - Athletics -->
+<div class="flex-1 relative rounded-[32px] overflow-hidden group">
+<img alt="Athletics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvHjmo5MrrDNYGD5PVmxjB16Tru6n39Xdch6l-IKq6pCyIIKCqQA_uLZRhu2pvHIuKHF-zN0_NuuQ6QFOiElBukcyOlFnjm0srOdIxlM5ZGtg79UgaAKI0BBxJzghe8okD664E3BFgw-IupEXgIhv5tuk2XGVjCb87AxjltCHER8lvaYOeWEUB07ARY5aw62sX5IH1pJYgqBILFmDvWupVENED9u-6OV_8OwAbmtB4Be3f6Iyh56bgyGMhR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<span class="px-3 py-1 bg-heritage-green text-xs font-label-lg uppercase tracking-wider rounded-full mb-2 inline-block">Athletics</span>
+<h3 class="font-headline-md text-xl">Championship Spirit</h3>
+</div>
+</div>
+<!-- Medium Image - STEM -->
+<div class="flex-1 relative rounded-[32px] overflow-hidden group">
+<img alt="STEM" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLveAYdaKvHQQNa9Q6eBBpcK3SXB-GJZZF8xDQ3CkmCIiFYtWR3LlZHTJYAnC31Ei0pzGUHso9oTWgPccrECmfnM-PXKb63jaC6JEMMBwaIqOC9H-vK7YlWzbzRd2GJqRKl-n05pleGjqvdyxkf4aF87-JmbJj42kG4PbMpN99uuK55J5ba7LVG_zi6rGBEI4jVbULcGKMNJRJKUIoxi4r4PCHeO95UHN3zWXmQq1mxKEkDICYRZs4WkqYVD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<span class="px-3 py-1 bg-surface-container-low text-heritage-green text-xs font-label-lg uppercase tracking-wider rounded-full mb-2 inline-block">STEM</span>
+<h3 class="font-headline-md text-xl">Innovation Labs</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Facilities Preview - Full Width -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12 text-center">
+<h2 class="font-headline-lg text-headline-lg text-heritage-green">Inspiring Spaces</h2>
+</div>
+<div class="relative w-full h-[60vh] min-h-[500px] group">
+<img alt="Facilities" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsBOkV2IJna01abReBkfYwICZeKXx0YeUH53gVB88oYxKhw5qJcOc85QBqhAXvtDeda0uI84B8ea_EDS7r74grAkgvsuQNvhKWGWo9FtyLi374Im2gRJryfwvR_ym9vuLoNc4SlWmRmFmaeF9lKz8AdkuP032A1-Nay0PMzatCc7R1KES0iR6RK-s67rB3Ba_LImC04_5_yj4ISSHRMybGOGyi6yHsOEVZEYCkjYWm7DxJDDqoXbvmxd8J0"/>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white/90 backdrop-blur-md p-8 rounded-2xl text-center max-w-md mx-4 shadow-float transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+<h3 class="font-headline-md text-2xl text-heritage-green mb-2">Modern Architecture</h3>
+<p class="font-body-md text-body-md text-text-muted mb-6">Designed to maximize natural light and collaborative learning.</p>
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg uppercase tracking-widest text-academic-gold hover:text-heritage-green transition-colors" href="#">
+                        Take a Virtual Tour <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- High-Converting CTA -->
+<section class="py-24 bg-heritage-green relative overflow-hidden">
+<!-- Abstract Shapes -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+<div class="absolute -top-[50%] -right-[10%] w-[800px] h-[800px] rounded-full bg-white/5 blur-3xl"></div>
+<div class="absolute -bottom-[50%] -left-[10%] w-[600px] h-[600px] rounded-full bg-academic-gold/10 blur-3xl"></div>
+</div>
+<div class="max-w-4xl mx-auto px-margin-mobile text-center relative z-10 space-y-8 text-white">
+<h2 class="font-display-lg-mobile md:font-display-lg text-balance">Begin Your Journey <br/>at Greenhill</h2>
+<p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto">
+                Admissions for the upcoming academic year are now open. Join a community dedicated to excellence.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+<button class="px-8 py-4 bg-academic-gold text-white font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-white hover:text-heritage-green transition-all duration-300 shadow-soft">
+                    Start Application
+                </button>
+<button class="px-8 py-4 bg-transparent border border-white/30 text-white font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-white/10 transition-all duration-300">
+                    Request Information
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-heritage-green dark:bg-primary text-on-primary w-full rounded-t-[100px] md:rounded-t-[160px] overflow-hidden mt-[-40px] relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-gutter px-margin-mobile md:px-margin-desktop pt-section-gap-mobile md:pt-section-gap-desktop pb-12 max-w-container-max mx-auto">
+<div class="md:col-span-2 space-y-6">
+<div class="font-headline-lg text-headline-lg text-white mb-4">Greenhill School</div>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-sm">
+                    Empowering students to achieve their highest potential in a supportive, innovative, and inclusive environment.
+                </p>
+<div class="flex space-x-4 pt-4">
+<!-- Social Icons placeholders -->
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-academic-gold transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-academic-gold transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-academic-gold transition-colors" href="#"><span class="material-symbols-outlined">play_arrow</span></a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg text-academic-gold uppercase tracking-widest mb-6">Quick Links</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-academic-gold transition-all opacity-80 hover:opacity-100" href="#">About School</a></li>
+<li><a class="text-on-primary/80 hover:text-academic-gold transition-all opacity-80 hover:opacity-100" href="#">Academics</a></li>
+<li><a class="text-on-primary/80 hover:text-academic-gold transition-all opacity-80 hover:opacity-100" href="#">Facilities</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg text-academic-gold uppercase tracking-widest mb-6">Admissions</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-academic-gold transition-all opacity-80 hover:opacity-100" href="#">Apply Now</a></li>
+<li><a class="text-on-primary/80 hover:text-academic-gold transition-all opacity-80 hover:opacity-100" href="#">Tuition &amp; Aid</a></li>
+<li><a class="text-on-primary/80 hover:text-academic-gold transition-all opacity-80 hover:opacity-100" href="#">Visit Campus</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg text-academic-gold uppercase tracking-widest mb-6">Contact Info</h4>
+<ul class="space-y-3 font-body-md text-body-md text-on-primary/80">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[20px] text-academic-gold">location_on</span>
+<span>123 Academic Way,<br/>Education City, ST 12345</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-academic-gold">call</span>
+<span>(555) 123-4567</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-academic-gold">mail</span>
+<span>info@greenhillschool.edu</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 text-center md:text-left font-label-md text-label-md text-on-primary/60">
+                © 2024 Greenhill School. All Rights Reserved. Privacy Policy | Terms of Service
+            </div>
+</div>
+</footer>
+<!-- Interactive Script for Navbar -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled-nav');
+                } else {
+                    navbar.classList.remove('scrolled-nav');
+                }
+            });
+        });
+    </script>
+</body></html>
