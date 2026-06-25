@@ -1,6 +1,19 @@
 # Agms_school
 
-A full-stack web application with a React frontend and Node.js backend.
+A comprehensive school website application built with a React frontend and a Node.js backend.
+
+## Features
+
+The frontend currently includes a complete set of pages tailored for a school website:
+- **Home**: Landing page with an overview of the school.
+- **About**: Information about the school's history, mission, and vision.
+- **Academics**: Details on the curriculum and educational programs.
+- **Admissions**: Information on how to apply and enrollment processes.
+- **Facilities**: Showcase of the school's infrastructure and amenities.
+- **Student Life**: Insight into extracurricular activities and student experiences.
+- **Achievements**: Highlights of the school's and students' accomplishments.
+- **Gallery**: Photo gallery of events and campus life.
+- **Contact**: Contact information and inquiry forms.
 
 ## Project Structure
 
