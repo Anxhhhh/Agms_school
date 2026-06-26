@@ -94,8 +94,8 @@ export default function About() {
 <div className="max-w-container-max mx-auto px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
 <div className="relative flex justify-center">
 {/* Using the specified image placeholder */}
-<div className="w-[80%] aspect-[0.72] rounded-full overflow-hidden shadow-2xl relative">
-<img alt="Principal" className="w-full h-full object-cover" src="/images/image-2.jpg"/>
+<div className="w-[80%] aspect-[18/25] rounded-full overflow-hidden shadow-2xl relative">
+<img alt="Principal" className="w-full h-full object-cover" src="/images/image-3.jpg"/>
 </div>
 {/* Decorative element */}
 <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-academic-gold rounded-full flex items-center justify-center p-6 text-center text-primary font-label-md text-label-md uppercase tracking-widest shadow-xl">

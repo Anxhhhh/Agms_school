@@ -67,7 +67,7 @@ export default function Home() {
 <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div className="relative order-2 lg:order-1">
 <div className="w-full aspect-[4/5] rounded-[40px] overflow-hidden shadow-float relative z-10">
-<img alt="About Aditya Gyan Mandir" className="w-full h-full object-cover" src="/images/image-38.jpg"/>
+<img alt="About Aditya Gyan Mandir" className="w-full h-full object-cover" src="/images/image-2.jpg"/>
 </div>
 <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-academic-gold rounded-full z-0 opacity-20 blur-3xl"></div>
 {/* Floating Stat Card */}
@@ -148,8 +148,8 @@ export default function Home() {
 <div className="bg-white rounded-[40px] shadow-float p-8 md:p-16 flex flex-col lg:flex-row items-center gap-16">
 <div className="lg:w-1/3 flex-shrink-0">
 <div className="relative w-64 h-64 mx-auto lg:w-80 lg:h-80">
-<div className="absolute inset-0 rounded-full border-4 border-academic-gold/30 translate-x-4 translate-y-4"></div>
-<img alt="Principal" className="w-full h-full object-cover rounded-full relative z-10 shadow-soft grayscale hover:grayscale-0 transition-all duration-500" src="/images/image-39.jpg"/>
+<div className="absolute -inset-4 rounded-full border-4 border-academic-gold/30"></div>
+<img alt="Principal" className="w-full h-full object-cover rounded-full relative z-10 shadow-soft transition-all duration-500" src="/images/image-3.jpg"/>
 </div>
 </div>
 <div className="lg:w-2/3 space-y-6 text-center lg:text-left">
