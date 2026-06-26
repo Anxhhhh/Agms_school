@@ -4,7 +4,7 @@ export default function Home() {
     <>
       <div>
 {/* TopNavBar */}
-<nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-sm transition-all duration-300 py-6" id="navbar">
+<nav className="fixed top-0 w-full z-50 bg-heritage-green/95 backdrop-blur-md shadow-sm transition-all duration-300 py-4 border-b border-academic-gold/20" id="navbar">
 <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <a className="brand-logo font-headline-md text-headline-md font-bold text-white transition-colors duration-300" href="#">Aditya Gyan Mandir</a>
 <div className="hidden md:flex items-center space-x-8">
